@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="user-grid">
+      <div class="login">
+        <div class="header">user login <i class="fas fa-user-alt"></i></div>
+        <div class="toggle-user">
+          <a href="adminlog.html">Admin</a>
+          <div class="vertical"></div>
+          <a href="login.html">Customer</a>
+        </div>
+        <br />
+        <div class="user-input">
+          <form action="dashboard.html" class="login-form">
+            <div class="custID">
+              <label><b>Customer ID</b></label>
+              <input
+                type="text"
+                id="cID"
+                placeholder="Enter customer ID"
+                required
+              />
+              <i class="fas fa-id-card"></i>
+            </div>
+            <div class="pass">
+              <label><b>Password</b></label>
+              <input
+                type="password"
+                id="pass"
+                placeholder="Enter your password"
+                required
+              />
+              <i class="fas fa-key"></i>
+            </div>
+            <input
+              type="submit"
+              class="sign-in"
+              id="login-form-submit"
+              value="Sign In"
+            />
+          </form>
+        </div>
+        <br />
+        <div class="signlink">
+          Not registered? <a href="register.html">Sign Up here!</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const custLoginForm = document.getElementById("login-form");
+      const custLoginButton = document.getElementById("login-form-submit");
+      const custId = document.getElementById("cID");
+      const custpass = document.getElementById("pass");
+
+      custLoginButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        const custidValue = custId.value;
+        const custpassValue = custpass.value;
+        if (custidValue === "abc090" && custpassValue === "user123") {
+          alert("You have successfully logged in.");
+          location.replace("dashboard.html");
+        } else {
+          alert("Invalid username and/or password");
+          location.reload();
+        }
+      });
+    </script>
+  </body>
+</html>

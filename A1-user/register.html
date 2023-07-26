@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="Register">
+      <div class="header">Registration Form</div>
+      <br />
+      <div class="content">
+        <form action="" class="form-input" id="form">
+          <span class="fields">Name:&nbsp;</span>
+          <div>
+            <label for="first-name"></label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="First Name"
+              style="width: 46%; float: left"
+            />
+            <label for="last-name"></label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Last Name"
+              style="width: 46%; float: right"
+            />
+          </div>
+          <br />
+          <br />
+          <div class="div1">
+            <div class="form-control">
+              <label class="fields" for="dob">
+                <br />
+                DOB:&nbsp;</label
+              >
+              <input type="date" id="dob" style="color: #555" />
+            </div>
+            <div class="form-control">
+              <label for="phone" class="fields" style="margin-top: 10px"
+                ><br />Phone Number: &nbsp;</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+              />
+              <br />
+              <span
+                ><i class="fas fa-exclamation-circle"></i> &nbsp; &nbsp; &nbsp;
+                &nbsp; <small></small
+              ></span>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="mail" class="fields"><br />E-mail: &nbsp;&nbsp;</label>
+            <input
+              type="text"
+              id="mail"
+              placeholder="example@email.com"
+              style="width: 70%"
+            />
+            <br />
+            <span
+              ><i class="fas fa-exclamation-circle"></i> &nbsp; &nbsp; &nbsp;
+              &nbsp; <small></small
+            ></span>
+          </div>
+          <span>Address: &nbsp; </span>
+          <div id="address">
+            <div class="pair">
+              <input type="text" id="state" placeholder="State" />
+              <label for="state" style="margin-left: 10px"
+                >State / Province / Region</label
+              >
+            </div>
+            &nbsp; &nbsp; &nbsp;
+            <div class="pair">
+              <input type="text" id="city" placeholder="City" />
+              <label for="city" style="margin-left: 10px">City</label>
+            </div>
+            &nbsp; &nbsp; &nbsp;
+            <div class="pair">
+              <input type="text" id="zcode" placeholder="Zip Code" />
+              <label for="zcode" style="margin-left: 12px"
+                >Postal / Zip Code</label
+              >
+            </div>
+          </div>
+          <br />
+          <div class="passwords">
+            <div class="form-control">
+              <label class="fields"><br />Password: &nbsp;</label>
+              <input
+                type="password"
+                id="pass"
+                placeholder="Enter your password"
+              />
+              <br />
+              <i class="fas fa-exclamation-circle"></i> &nbsp; &nbsp; &nbsp;
+              &nbsp;
+              <small></small>
+            </div>
+            &nbsp; &nbsp;
+            <div class="form-control">
+              <label class="fields"><br />Confirm Password: &nbsp;</label>
+              <input
+                type="password"
+                id="cpass"
+                placeholder="Confirm your password"
+              />
+              <br />
+              <span
+                ><i class="fas fa-exclamation-circle"></i> &nbsp; &nbsp; &nbsp;
+                &nbsp; <small></small
+              ></span>
+            </div>
+          </div>
+          <br />
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

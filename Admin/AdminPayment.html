@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Payments</title>
+    <link rel="stylesheet" href="AdminDashBoard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#" >
+                        <span class="icon"><ion-icon name="flash-outline"></ion-icon></span>
+                        <span class="title" style="font-size: 15px;">Electricity Board of India</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminProfile.html" >
+                        
+                        <span class="title">Tiana</span>
+                        <span class="profile-icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminDashBoard.html" >
+                        <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminCustomer.html" >
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <span class="title">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminBills.html" >
+                        <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="title">Bills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminPayment.html" >
+                        <span class="icon"><ion-icon name="card-outline"></ion-icon></span>
+                        <span class="title">Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminFeedback.html" >
+                        <span class="icon"><ion-icon name="document-outline"></ion-icon></span>
+                        <span class="title">Feedback</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminAnnoucement.html" >
+                        <span class="icon"><ion-icon name="paper-plane-outline"></ion-icon></span>
+                        <span class="title">Annoucements</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../A1-user/adminlog.html" >
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-body">
+<!-- <div class="header">
+        </div> -->
+        <div class="white-header">
+
+        </div>
+        <div class="search">
+            <div class="filter-head">
+                <h2>
+                    Choose the Option below to view Payment list
+                </h2>
+            </div>
+            <div class="filter">
+                
+                <select>
+                    <option value="new">Payment Successfull</option>
+                    <option value="defaulters">Failed Payments</option>
+                    <option value="viewAll" selected>View-All</option>
+                </select>
+            </div>
+        </div>
+        <div class="new box">
+            <div class="Customer-table">
+            
+                <div class="table-header"><h2>Payment Successfull</h2></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <tr>
+                                <td>Cutomer ID</td>
+                                <td>Bill No</td>
+                                <td>Transaction Id</td>
+                                <td>Paid Amount</td>
+                                <td>Pay Date</td>
+                                <td>Pay Time</td>
+                                <td>Pay Status</td>
+                            </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="defaulters box">
+            <div class="Customer-table">
+            
+                <div class="table-header"><h2> Failed Payments</h2></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <tr>
+                                <td>Cutomer ID</td>
+                                <td>Bill No</td>
+                                <td>Transaction Id</td>
+                                <td>Paid Amount</td>
+                                <td>Pay Date</td>
+                                <td>Pay Time</td>
+                                <td>Pay Status</td>
+                            </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="viewAll box">
+            <div class="Customer-table">
+            
+                <div class="table-header"><h2>View-All</h2></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <tr>
+                                <td>Cutomer ID</td>
+                                <td>Bill No</td>
+                                <td>Transaction Id</td>
+                                <td>Paid Amount</td>
+                                <td>Pay Date</td>
+                                <td>Pay Time</td>
+                                <td>Pay Status</td>
+                            </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Successfull</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>Baily</td>
+                            <td>20202</td>
+                            <td>52345135446536456</td>
+                            <td>50000</td>
+                            <td>22-12-2021</td>
+                            <td>19:24:33</td>
+                            <td><span class="Approve"><a href="#">Failed</a></span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+
+        
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let list = document.querySelectorAll('.navigation li');
+        function activelink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover',activelink))
+        
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("select").change(function(){
+            $(this).find("option:selected").each(function(){
+                var optionValue = $(this).attr("value");
+                if(optionValue){
+                    $(".box").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else{
+                    $(".box").hide();
+                }
+            });
+        }).change();
+    });
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+body {
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: #f3f4f6;
+  /* background-color: #ebf2f2; */
+  color: #555555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-grid,
+.Register {
+  width: 450px;
+  height: 540px;
+  padding: 50px;
+  border-radius: 50px;
+  background-color: #f3f4f6;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  margin: 10px;
+}
+.Register {
+  width: 870px;
+  height: 860px;
+}
+
+.form-input input {
+  width: 100%;
+  outline: none;
+  background: none;
+  font-weight: 400;
+  border: none;
+  color: #555555;
+  font-size: 16px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: inset 6px 6px 10px #cbced1, inset -6px -6px 10px #fff;
+}
+
+.header {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 0px 0px 5px #f3f4f6, 6px 6px 10px #a7aaaf,
+    -6px -6px 10px #ffffff;
+  border-radius: 15px;
+  text-shadow: 0px 1px #555;
+}
+
+.content {
+  padding: 10px;
+  margin: 10px;
+}
+
+.user-input i {
+  position: relative;
+  bottom: 5px;
+  font-size: 40px;
+}
+
+.login .toggle-user {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 30px 0px 10px 0;
+  justify-content: space-around;
+  border-radius: 15px;
+  background-color: #f3f4f6;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+}
+
+.toggle-user a {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px;
+  text-decoration: none;
+  color: #f3f4f6;
+  background-color: rgb(40, 117, 180);
+  transition: 0.5s ease;
+}
+
+.toggle-user .vertical {
+  border-left: 2px solid #f3f4f6;
+  height: 45px;
+}
+
+.toggle-user a:hover {
+  color: rgb(40, 117, 180);
+  background-color: #f3f4f6;
+  border-radius: 20px;
+}
+
+.user-input p {
+  font-size: 20px;
+}
+
+.user-input input {
+  font-weight: 400;
+  border: none;
+  background: none;
+  width: 100%;
+  outline: none;
+  color: #555555;
+  font-size: 16px;
+  padding: 14px 49px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: inset 6px 6px 10px #cbced1, inset -6px -6px 10px #fff;
+}
+
+.pass,
+.custID {
+  position: relative;
+}
+
+.pass i,
+.custID i {
+  position: absolute;
+  font-size: 20px;
+  left: 20px;
+  top: 50px;
+  color: gray;
+}
+
+.custID i {
+  top: 48px;
+}
+
+input[type="submit"] {
+  background: #f3f4f6;
+  border: none;
+  color: white;
+  background-color: rgb(40, 117, 180);
+  padding: 10px;
+  width: 50%;
+  font-size: 18px;
+  width: 150px;
+  margin: 0 50%;
+  position: relative;
+  left: -75px;
+  border-radius: 150px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  background-color: darkcyan;
+}
+
+input[type="submit"]:active {
+  background-color: darkslategrey;
+}
+
+.signlink {
+  text-align: center;
+}
+.signlink a {
+  text-decoration: none;
+  color: #706fd3;
+}
+.signlink a:hover {
+  text-decoration: underline;
+}
+
+#address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#address span {
+  margin: 5px;
+}
+
+.div1,
+.content form .passwords {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form-control {
+  padding-bottom: 5px;
+}
+.form-control input {
+  position: relative;
+}
+
+.form-control i.fa-exclamation-circle {
+  visibility: hidden;
+  position: absolute;
+  font-size: 20px;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #ff5252;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+}
+
+.form-control.success span {
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #ff5252;
+}
+
+.user-input {
+  display: flex;
+  padding: 0 5px 5px 5px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+}
+#menu {
+  height: 100%;
+  width: 500px;
+  background-color: #227093;
+  color: white;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+}
+#menu h2 {
+  padding: 0 20px;
+}
+#menu h2 i {
+  margin: 10px;
+}
+#menu .links {
+  margin-top: 30%;
+}
+#menu .links ul {
+  padding: 0;
+}
+#menu .links ul li {
+  padding: 20px 30px;
+  transition: 0.5s ease;
+}
+
+#menu .links ul li:nth-child(4) {
+  margin-top: 65px;
+  padding: 15px 45px;
+  border-bottom: none;
+}
+
+#menu .links ul li:hover {
+  cursor: pointer;
+  background-color: #34ace0;
+}
+#menu .links ul li i {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 10px 0 25px;
+}
+#menu .links ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.box {
+  border: 2px solid #555;
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+}
+#announcement {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#announcement .announce {
+  padding: 12px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  transition: 0.7s ease;
+}
+#announcement .announce a {
+  color: #2c2c54;
+  text-decoration: none;
+  font-size: 18px;
+}
+#announcement .announce a:hover {
+  color: #ff793f;
+  cursor: pointer;
+}
+
+.box h2 {
+  font-family: Bebas Neue, cursive;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin: 10px;
+}
