@@ -1,0 +1,179 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+:root {
+    --darker-black: #0e0e0e;
+    --lighter-black: #303030 ; 
+    --smoke :#FFEFCA;
+    --gold: #be9e44;
+    --red: #ee1d3d;
+
+    --bg-main: whitesmoke;
+    --whitespace : 0.1fr;
+  }
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+.bigContainer {
+    width: 100%;
+    background-color: var(--bg-main);
+    height: 100vh;
+    /* margin: 5px auto; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr var(--whitespace) 2fr var(--whitespace);
+
+    /* grid-row-gap:2px; */
+    /* grid-column-gap:20px; */
+    
+}
+
+/* FOR VISIBILITY  */
+.bigContainer > div:nth-child(1) { background-color: var(--darker-black);}
+.bigContainer > div:nth-child(2) { background-color: var(--lighter-black);}
+.bigContainer > div:nth-child(3) { background-color:whitesmoke;}
+.bigContainer > div:nth-child(4) { background-color: purple;}
+.bigContainer > div:nth-child(5) { background-color: orangered;}
+.bigContainer > div:nth-child(6) { background-color: peru;}
+
+/* PIE CONTAINER  */
+/* .pieContainer {
+    height: 300px;
+    position: relative;
+
+
+    
+    border: 3px solid red;
+} */
+  
+  /* .pieBackground {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.822);
+  } 
+  
+  .pie {
+    transition: all 1s;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    clip: rect(0px, 75px, 150px, 0px);
+  }
+  
+  .hold {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  #pieSlice1 .pie {
+    background-color: #1b458b;
+    transform:rotate(30deg);
+  }
+  
+  #pieSlice2 {
+    transform: rotate(30deg);
+  }
+  
+  #pieSlice2 .pie {
+    background-color: #0a0;
+    transform: rotate(60deg);
+  }
+  
+  #pieSlice3 {
+    transform: rotate(90deg);
+  }
+  
+  #pieSlice3 .pie {
+    background-color: #f80;
+    transform: rotate(120deg);
+  }
+  
+  #pieSlice4 {
+    transform: rotate(210deg);
+  }
+  
+  #pieSlice4 .pie {
+    background-color: #08f;
+    transform: rotate(10deg);
+  }
+  
+  #pieSlice5 {
+    transform: rotate(220deg);
+  }
+  
+  #pieSlice5 .pie {
+    background-color: #a04;
+    transform: rotate(70deg);
+  }
+  
+  #pieSlice6 {
+    transform: rotate(290deg);
+  }
+  
+  #pieSlice6 .pie {
+    background-color: #ffd700;
+    transform: rotate(70deg);
+  }
+   */
+
+/* #chartID {
+  display: block;
+  box-sizing: border-box;
+  height: px;
+  width: 1531.2px;
+} */
+
+/* canvas{
+
+  width:600px !important;
+  height:500px !important;
+
+} */
+
+.pieContainer {
+  /* height and width given for the chart itself, */
+  /* do not exceed the height of the grid item */
+  height: 400px;
+  width: 600px;
+
+  /* border: 2px solid black; */
+  margin: 20px auto;
+
+  border-radius: 5%;
+  box-shadow: 0px 0px 20px 1px grey;
+}
