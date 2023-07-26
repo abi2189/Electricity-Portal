@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head>
+        <title>
+            Payment Gateway
+        </title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="0-mainBaseRedoneClean.css">
+
+    </head>
+
+    <body>
+        <div class="main-header-container">
+            <div class="logo"><ion-icon name="flash-sharp"></ion-icon></div>
+            <div class="title-text title-text-top">Electricity Board of India</div>
+            <div class="trigger-main-stages-container">
+                <ion-icon name="menu" onclick="menuToggle()"></ion-icon>
+            </div>
+
+        </div>
+        <div class="wrap">
+        <div class="main-stages-container active" id="stages">
+            <div class="div-stages s1"  onclick="javascript:location.href='../../A1-user/dashboard.html'">Home<div class="borderBottom b1"></div></div>
+            <div class="div-stages s2" onclick="javascript:location.href='../../s1-0-Bills/0-BASE/0-billsMainBaseRedoneClean.html'">Bills<div class="borderBottom b2"></div></div>
+            <div class="div-stages s3" onclick="javascript:location.href='../../s2-Analysis/0-BASE/0-analysisMainBaseRedoneClean.html'">Analysis<div class="borderBottom b3"></div></div>
+            <div class="div-stages s4" onclick="javascript:location.href='../../s3-Customer-Account/0-BASE/0-accountMainBaseRedoneClean.html'">Account<div class="borderBottom b4"></div></div>
+        </div>
+        </div>
+<!-- =================================================================================== -->
+        <div class="main-content-container">
+            <iframe src="../s5-sub-PaymentSub/s6-PaymentSubNew.html" frameborder="0"></iframe>
+            <!-- <div class="whitespace" style="height: 90vh; background-color: #fff;"></div> -->
+
+        </div>
+<!-- =================================================================================== -->
+
+        <!-- SCRIPT INSERTS -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+
+        <script src="0-mainBaseRedoneClean.js"></script>
+
+    </body>
+</html>

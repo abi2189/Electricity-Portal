@@ -1,0 +1,361 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+:root {
+    --darker-black: #0e0e0e;
+    --lighter-black: #303030 ; 
+    --smoke :#FFEFCA;
+    --gold: #be9e44;
+    --red: #ee1d3d;
+
+    --bg-main: #fff;
+    --whitespace : 0.05fr;
+
+
+    /* BILL CONTENT */
+    --header-font : sans-serif;
+    --content-font : sans-serif;
+
+    --bill-header-font-size : 28px;
+    --bill-content-font-size : 12px;
+  }
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+   
+  }
+
+.bigContainer {
+    width: 100%;
+    background-color: var(--bg-main);
+    height: 150vh;
+    /* margin: 5px auto; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--whitespace) var(--whitespace) var(--whitespace) 1.2fr var(--whitespace) var(--whitespace) var(--whitespace) 1.3fr var(--whitespace);
+
+    /* grid-row-gap:2px; */
+    /* grid-column-gap:20px; */
+    
+}
+
+/* BILLS-MAIN  */
+.b1 {
+    width: 50%;
+    background-color: var(--bg-main);
+    /* height == adjust it with parent class. */
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+
+    grid-auto-columns: minmax(250px,1fr);
+     /*the items added outside the viewport do not match auto-fit, so they won't get the size defined in your template. So you have to define it again with grid-auto-columns.*/
+
+    /* overflow-x: auto;  */
+
+    /* visibility */
+    grid-column-gap: 10px;
+    padding: 10px 10px;
+}
+
+.b2 {
+    width: 100%;
+    background-color: var(--bg-main);
+    /* height == adjust it with parent class. */
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+
+    grid-auto-columns: minmax(250px,1fr);
+
+
+    overflow-x: auto; /*auto will add the scrollbar*/
+
+    /* visibility */
+    grid-column-gap: 10px;
+    padding: 10px 10px;
+}
+
+/* .bills-main > div {
+    background-color: var(--gold);
+} */
+
+/* BILLS-MAIN HOVER EFFECT  */
+
+.bill-all{
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    /* width: 23.7%; */
+
+    backface-visibility: hidden;
+    /* put this when ur front is still visible after flip  */
+}
+  
+.bill-all:hover > .card {
+    transform: rotateY( 180deg);
+}
+.card {
+    animation: anim 2s 1s;
+    transition: transform 0.4s ease 0s;transform-style: preserve-3d;
+    /* not that imp  */
+    backface-visibility: hidden;
+}
+.card > .back {
+    transform: rotateY(180deg);
+}
+
+.card > .back, .card > .front {
+    backface-visibility: hidden;
+    /* box-sizing: border-box; */
+
+    /* was display block, grid doesnt change anything, lets us use one color overall for the card. */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+
+@keyframes anim {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+}
+
+/* BILLS FONT AND STYLING  */
+
+.card > .back, .card > .front {
+    text-align: center;
+    /* common */
+}
+
+.front > .header {
+    display: block;
+    margin: 80px auto 40px;
+
+    text-align: center;
+    font-size: var(--bill-header-font-size);
+    font-family: var(--header-font);
+    /* font-style: bold; */
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    
+    /* border: 2px solid black; */
+    
+}
+
+.front > .points {
+    text-align: center;
+
+    font-size: var(--bill-content-font-size);
+    font-family: var(--content-font);
+    line-height: 28px;
+    /* font-style: bold; */
+    letter-spacing: 0.3px;
+    word-spacing: 0.5px;
+
+    /* border: 2px solid black; */
+}
+
+.front hr {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background: #fff;
+    color: #fff;
+}
+
+.price {color: white}
+
+/* BILL COLORS */
+/* simple height fix using property wow */
+
+.b1 .front,.b1 .back {
+    height: 430px;
+}
+
+.upcoming-front > .points {
+    /* border: 2px solid black; */
+    align-self: center;
+}
+
+.overdue-front {
+    background-color: #ff5252;
+}
+.overdue-back {
+    background-color: #b33939;
+}
+.due-front {
+    background-color: #33d9b2;
+}
+.due-back {
+    background-color: #218c74;
+}
+
+.upcoming-front {
+    background-color: #d1ccc0;
+    pointer-events: none;
+}
+.upcoming-back{
+    background-color: #84817a;
+}
+
+/* BILL BACK-SIDE */
+
+.price {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-style: bold; */
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+
+    /* border: 2px solid black; */
+    margin: 100px auto 110px;
+}
+.pay a {
+    /* border: 2px solid black; */
+    padding: 12px 30px;
+    border-radius: 100px;
+    /* margin: 80px auto; */
+
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    font-family: serif;
+    font-size: 1.2em;
+
+
+    transition: all 2s 120ms;
+}
+.pay a:hover {
+    box-shadow: 0px -80px 0px 0px black inset,
+                0px +80px 0px 0px black inset;
+    color: #fff;
+}
+
+.upcoming-back .pay a {
+    /* border: 5px solid whitesmoke; */
+    cursor: not-allowed;
+}
+
+/* PAID BILLS */
+.paid-back {
+    /* border: 2px solid whitesmoke; */
+    align-content: center;
+}
+
+.paid-back > .paid {
+    font-size: 28px;
+    position: relative;
+    bottom: -80px;
+}
+
+.paid-front {
+    background-color: #ffb142
+}
+
+.paid-back {
+    background-color: #cc8e35;
+}
+
+.b2 .front,.b2 .back {
+    height: 430px;
+}
+
+/* WHITESPACE  */
+
+.wh {
+    text-align: center;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+
+    position: relative;
+}
+.wh > .borderBottom {
+    border-bottom: 2px solid orangered;
+
+    position: absolute;
+    left: 48%;
+    right: 48%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* major idea, lil bit of formatting,
+also dont forget box shadow for all cards.
+use minimilistic font pls */
+
+/* bar usually contains filter options,
+try it out only if TIME PERMITS, or just put there with no usability */
+
+
+/* 1. height and width adjustment for bills-main:nth-child(1)
+width in grid settings, height in 208
+DONE 
+
+2. .pay transition
+.pay color scheme
+.pay font
+
+3.
+.paid-front,.paid-back,.paid-height, paid bottom height
+
+4.
+.big-container---> height
+hr-color 
+grid-column-gap
+
+5.
+.whitespace height shift
+first do grid-item height adjust */
